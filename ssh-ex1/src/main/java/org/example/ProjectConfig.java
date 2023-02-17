@@ -2,12 +2,14 @@ package org.example;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ProjectConfig {
 
     //Object instance in Spring context
     @Bean
+    @Primary
     Parrot parrot1() {
 
         var p = new Parrot();
@@ -15,7 +17,7 @@ public class ProjectConfig {
         return p;
         //Spring adds to its context the Parrot instance returned by method
     }
-
+//If not parrot specified negger will be first
     @Bean
     String hello(){
         return "Hello";
