@@ -1,10 +1,13 @@
 package org.example;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
 @Configuration
+@ComponentScan(basePackages = "org.example")
 public class ProjectConfig {
 
     //Object instance in Spring context
@@ -40,4 +43,10 @@ public class ProjectConfig {
         return p;
     }
     //Spring context add instances we expect Spring to manage
+
+Cat cat(){
+        var p = new Cat();
+        p.setName("Bigototo");
+        return p;
+    }
 }

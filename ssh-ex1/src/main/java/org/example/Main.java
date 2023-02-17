@@ -19,5 +19,9 @@ public class Main {
         System.out.println(n);
 
 
+    Cat c = context.getBean(Cat.class);
+    System.out.println(c);
+        System.out.println(c.getName());
+
     }
 }

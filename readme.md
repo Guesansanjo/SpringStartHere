@@ -15,3 +15,23 @@ Sprin start page 28
 [What if i need a dependency](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html)
 
 @Bean --> allows add instance class defined in our project , so Spring manages object thats its part of it
+
+Remember, adding beans to the Spring context is essential
+because it’s how you make Spring aware of the object instances of your application,
+which need to be managed by the framework
+
+#### Stereotype anottations 
+
+@Component
+
+needs @PostConstruct
+
+<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+
+To work properly ...
