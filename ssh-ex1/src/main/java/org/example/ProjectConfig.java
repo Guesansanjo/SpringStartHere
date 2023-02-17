@@ -8,11 +8,34 @@ public class ProjectConfig {
 
     //Object instance in Spring context
     @Bean
-    Parrot parrot() {
+    Parrot parrot1() {
 
         var p = new Parrot();
         p.setName("Negger");//Set name parrot
         return p;
         //Spring adds to its context the Parrot instance returned by method
     }
+
+    @Bean
+    String hello(){
+        return "Hello";
+    }
+
+    @Bean
+    Integer ten(){
+        return 10;
+    }
+    @Bean("miki") //Set name of the bean to instanciate in main
+    Parrot parrot2(){
+        var p = new Parrot();
+        p.setName("Koko");
+        return p;
+    }
+    @Bean
+    Parrot parrot3(){
+        var p = new Parrot();
+        p.setName("Miki");
+        return p;
+    }
+    //Spring context add instances we expect Spring to manage
 }

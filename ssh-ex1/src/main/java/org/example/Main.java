@@ -9,8 +9,15 @@ public class Main {
         var context =
                 new AnnotationConfigApplicationContext(ProjectConfig.class);
         //We send instance of the object as parameter  so Spring uses it
-        Parrot p = context.getBean(Parrot.class);
+        Parrot p = context.getBean("miki",Parrot.class);
         System.out.println(p.getName());
+        //If multiple @Bean same object specify which
+        String s = context.getBean(String.class);
+           System.out.println(s);
+
+       Integer n = context.getBean(Integer.class);
+        System.out.println(n);
+
 
     }
 }
