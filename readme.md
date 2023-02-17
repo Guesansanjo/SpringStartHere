@@ -11,3 +11,7 @@ for Today’s Java Developers by Balaji Varanasi*
 3.  A version, which is an identifier of the current implementation state
 
 Sprin start page 28
+
+[What if i need a dependency](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html)
+
+@Bean --> allows add instance class defined in our project , so Spring manages object thats its part of it
