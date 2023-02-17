@@ -35,3 +35,21 @@ needs @PostConstruct
 
 
 To work properly ...
+
+## Using @PostConstruct to manage the instance after its creation
+
+----------
+
+Example where @Bean is not enough 
+
+if (condition) { 
+ registerBean(b1); 
+ 
+} else {
+ registerBean(b2); 
+}
+
+Using the registerBean() method
+you can write custom logic to 
+add the desired instances to the 
+Spring contexP
