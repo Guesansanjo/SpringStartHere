@@ -18,6 +18,8 @@ public class ProjectConfig {
 
         Person p = new Person();
         p.setName("Andres");
+        p.setParrot(parrot());
+        //setting reference parrot bean to person's parrot attr
         return p;
     }
 }
