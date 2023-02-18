@@ -18,7 +18,7 @@ public class SshEx2Application {
 	x.setName("Kiki");
 
 		Supplier<Parrot> parrotSupplier = () -> x; //Suplier return instance
-		context.registerBean("parrot1",Parrot.class,parrotSupplier); //RegisteBean add instance to spring context
+		context.registerBean("parrot1",Parrot.class,parrotSupplier,bc->bc.setPrimary(true)); //RegisteBean add instance to spring context
 
 		Parrot p = context.getBean(Parrot.class);//Verify bean in context we refer to parrto bean and print
 		System.out.println(p.getName());
