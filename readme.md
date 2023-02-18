@@ -167,3 +167,43 @@ public class Person {
 ###  Choosing from multiple beans in spring context
 
 page 92
+
+```java
+@Configuration
+public class ProjectConfig {
+ @Bean
+ public Parrot parrot1() {
+ Parrot p = new Parrot();
+ p.setName("Koko");
+ return p;
+ }
+ @Bean
+ public Parrot parrot2() {
+ Parrot p = new Parrot();
+ p.setName("Miki");
+ return p;
+ }
+ @Bean
+ public Person person(
+ @Qualifier("parrot2") Parrot parrot) {
+ Person p = new Person();
+ p.setName("Ella");
+ p.setParrot(parrot);
+ return p;
+ }
+}
+```
+
+```java
+@Component
+public class Person {
+ private String name = "Ella";
+ private final Parrot parrot;
+ public Person(@Qualifier("parrot2") Parrot parrot) {
+ this.parrot = parrot;
+ }
+ // Omitted getters and setters
+}
+```
+
+@Qualifier the way to go ...
