@@ -4,7 +4,9 @@ public class Parrot {
 
     private String name;
 
-    public Parrot() {}
+    public Parrot() {
+        System.out.println("Parrot created");
+    }
     public Parrot(String name) {
         this.name = name;
     }
