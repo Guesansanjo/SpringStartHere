@@ -89,3 +89,7 @@ Spring calls parrot() bean inside the context when we use @Bean.
 ![alt](../img/springBean.jpg)
 
 If parrot exists Spring takes from context , else if parrot bean does not exist , Spring calls parrot method and return bean.
+
+### Wiring @Bean annotated method
+
+works with @Bean or @Component flexible ...
