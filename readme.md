@@ -53,3 +53,13 @@ Using the registerBean() method
 you can write custom logic to 
 add the desired instances to the 
 Spring contexP
+
+### Wiring beans in Spring context
+
+3 ways of wiring 
+
+- wiring
+- auto-wiring
+- dependency injection
+
+
