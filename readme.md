@@ -93,3 +93,9 @@ If parrot exists Spring takes from context , else if parrot bean does not exist 
 ### Wiring @Bean annotated method
 
 works with @Bean or @Component flexible ...
+
+```java
+ public Person person(Parrot parrot) {}
+```
+
+we provide @Bean by parameter , injecto parrot into bean into this parameter
