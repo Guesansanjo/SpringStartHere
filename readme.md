@@ -122,3 +122,19 @@ we use @Component create a bean and @Autowired relationships 2 beans ...
 @Autowired inject appropiate value to context
 
 why not usable in prod -> we cant use final ...
+
+##### 3.2 @Autowired inject with constructor
+
+most often used in production code ...
+
+fields as final no one can change their value after Spring initzialize em ...
+
+
+```java
+private final Parrot parrot;
+ @Autowired
+ public Person(Parrot parrot) {
+ this.parrot = parrot;
+ }
+```
+
