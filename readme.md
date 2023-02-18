@@ -156,3 +156,14 @@ public class Person {
 ```
 
 
+
+
+### Circular dependencies
+
+![alt](../img/springDead.jpg)
+
+
+
+###  Choosing from multiple beans in spring context
+
+page 92
