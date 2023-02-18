@@ -99,3 +99,26 @@ works with @Bean or @Component flexible ...
 ```
 
 we provide @Bean by parameter , injecto parrot into bean into this parameter
+
+
+### Wiring @Autowired inject beans 
+
+link betwween beans in spring context @Autowired .
+
+we mark an object property where we want spring to inject value.
+
+3 ways to inject with @Autowired
+
+1. inject value in field class 
+2. inject value with contrusctor paarmeter of class approach
+3. Inject value with setter , rarely used
+
+##### 3.1 @Autowired class fields 
+
+we avoid this one ...
+
+we use @Component create a bean and @Autowired relationships 2 beans ...
+
+@Autowired inject appropiate value to context
+
+why not usable in prod -> we cant use final ...
