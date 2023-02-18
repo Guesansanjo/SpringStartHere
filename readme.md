@@ -138,3 +138,19 @@ private final Parrot parrot;
  }
 ```
 
+##### 3.3 Dependency injection through setter
+
+This really bad dificult to read , no final , test difficult
+
+```java
+@Component
+public class Person {
+ private String name = "Ella";
+ private Parrot parrot;
+ // Omitted getters and setters
+ @Autowired
+ public void setParrot(Parrot parrot) {
+ this.parrot = parrot;
+ }
+}
+```
