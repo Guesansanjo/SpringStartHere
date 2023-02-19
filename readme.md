@@ -207,3 +207,9 @@ public class Person {
 ```
 
 @Qualifier the way to go ...
+
+### Using interfaces to define contract
+
+interface is
+an abstract structure you use to declare a specific responsibility.
+
