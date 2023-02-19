@@ -219,3 +219,25 @@ an abstract structure you use to declare a specific responsibility.
 Interfaces are abstract.
 We never use stereotype
 annotations on interfaces.
+
+## object responsability with stereotype annotations
+
+The services are the objects with the responsibility of implementing the use cases,
+while repositories are the objects managing the data persistence. 
+
+@Service
+@Repository
+
+## Singleton/Prototype
+
+singleton default scope for a bean in spring.
+
+default approach of spring
+
+Sprimg creates singleton bean on load context , same instance of same type 
+
+singleton with annotation
+
+![alt](../img/sing.jpg)
+
+page 131
