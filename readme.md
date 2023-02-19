@@ -213,3 +213,9 @@ public class Person {
 interface is
 an abstract structure you use to declare a specific responsibility.
 
+##  Using dependency injection with abstractions
+
+ 
+Interfaces are abstract.
+We never use stereotype
+annotations on interfaces.
