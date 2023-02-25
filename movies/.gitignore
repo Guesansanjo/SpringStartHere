@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### ENV FILE  metemos el .env por seguridad y tal###
