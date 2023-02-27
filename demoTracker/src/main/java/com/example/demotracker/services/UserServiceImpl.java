@@ -13,12 +13,10 @@ import java.util.regex.Pattern;
 @Transactional
 public class UserServiceImpl implements UserService {
 
-    final
+    @Autowired
     UserRepository userRepository;
 
-    public UserServiceImpl(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+
 
 
     @Override

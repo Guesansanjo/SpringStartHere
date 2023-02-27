@@ -17,7 +17,7 @@ public class UserRepositoryImpl implements UserRepository{
     private static final String SQL_CREATE = "INSERT INTO ET_USERS(USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD) VALUES(NEXTVAL('ET_USERS_SEQ'), ?, ?,?,?)";
     private static final String SQL_COUNT_BY_EMAIL = "SELECT COUNT(*) FORM ET_USERS WHERE EMAIL = ?";
     private static final String SQL_FIND_BY_ID = "SELECT USER_ID, FIRST_NAME, LAST_NAME, EMAIL, PASSWORD" + "FROM ET_USERS WHERE USER_ID = ?";
-    final
+    @Autowired
     JdbcTemplate jdbcTemplate;
 
     public UserRepositoryImpl(JdbcTemplate jdbcTemplate) {
