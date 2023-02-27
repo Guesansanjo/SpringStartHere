@@ -2,7 +2,9 @@ package com.example.demotracker.repositories;
 
 import com.example.demotracker.domain.User;
 import com.example.demotracker.exceptions.EtAuthException;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserRepository {
 
     Integer create(String firstName, String lastName, String email, String password) throws EtAuthException;
